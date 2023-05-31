@@ -1,0 +1,92 @@
+6). Optional
+- 래퍼 클래스(Wrapper Class)
+1.8 - NullPointException
+
+class Optional<T> {
+   ...
+
+   private final T value;
+   ...
+}
+
+Optional.fo("값")
+
+- 래퍼클래스(Wrapper Class)
+
+Optional
+ Optional.of("값") : null 값 미허용(예외 발생)
+ Optional.ofNullable("값") : null 값 허용
+  - get() : 내부의 있는 value 값을 가져오는 메서드
+  - orElse("기본값") : 값이 null일때 기본값으로 대체
+  - orElseGet(Supplier ...) : 
+  - orElseThrow(Supplier ..)
+  - isPresent() : 값이 있는지
+  - isEmpty() : 값이 비어있는지
+
+OptionalInt
+  - getAsInt
+OptionalLong
+  - getAsLong
+OptionalDouble
+  - getAsDouble
+
+11. 스트립의 최종 연산
+
+1) forEach()
+
+2) 조건 검사 - allMatch(), anyMatch(), noneMatch(),
+findFirst(), findAny()
+
+3) 통계 = count(), sum(), average(), max(), min()
+
+Stream - count(), max(), min()
+IntStream, LongStream ... - sum(), average();
+
+4) 리듀싱 - reduce()
+
+count()
+max()
+min()
+sum()
+
+
+5) collect()
+  java.util.stream.Collectors // Collector
+  - 스트림 -> 컬렉션 프레임워크 변환
+  - toList()
+  - toSet()
+  - toMap()
+  - toCollection() // ArrayList, HashSet
+
+
+Collection 
+  List - 순차자료구조
+         - 순서가 유지되는 자료구조(배열)
+
+  set - 집합 자료구조
+         - 중복 X, 순서 유지 X 
+
+  map = Dictionary
+           키, 값의 순서쌍
+	 - 순서 유지 X
+
+  joining()
+
+  partitioningBy - 2개로 분할
+
+  groupingBy - 특정 기준값으로 분할
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

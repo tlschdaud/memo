@@ -1,0 +1,30 @@
+1. 이벤트와 이벤트 처리의 개념
+  - 이벤트 핸들러
+
+2. 이벤트의 종류
+  - 이벤트 클래스와 리스너 인터페이스
+
+●1) Action Event - ActionListener
+  - getSource() - 이벤트가 발생한 요소 객체 주소
+
+2) ChangeEvent - ChangeListener
+
+3) ItemEvent - ItemListener
+
+●4) KeyEvent - KeyListener
+
+5) ListSelectionEvent - ListSelectionListener
+
+●6) MouseEvent - MouseListener
+
+●7) MouseEvent - MouseMotionListener
+
+8) WindowEvent - WindowListener
+
+JOPtionPane -> 팝업
+  - 메세지
+  - 확인
+  - 입력
+
+2. 이벤트의 종류
+  - 

@@ -1,0 +1,55 @@
+지네릭스
+1.지네릭스란?
+
+
+2.지네릭 클래스의 선언
+Box
+
+
+
+- 컴파일시에 타입 변수<T> 제거
+- 객체 생성시 T -> Apple 형변환 발생
+- 컴파일시 T -> Object
+- 객체 생성하고 사용시 Object => Apple 형변환
+
+- static 메서드, 변수 사용 불가
+- 타입 변수로 배열 X
+
+3.지네릭스의 용어
+
+타입 변수 T(Type),E(Element),K(Key),V(Value)
+
+4.지네릭스의 제한
+T extends Apple
+extends Apple 없으면 T - Object
+extends Apple 있으면 T - Apple
+
+extends - 하한 제한, 하위 클래스 모두
+super - 상한 제한, 상위 클래스 모두
+
+5.지네릭 클래스의 객체 생성과 사용
+
+// static
+
+
+
+6.제한된 지네릭 클래스
+
+
+
+
+
+7.와일드 카드
+? -> Object
+? extends T : T 자료형 하한 제한
+? super T :  T 자료형 상한 제한
+
+- 메서드 호출시에 자료형으로 형변환
+
+
+8.지네릭 메서드
+
+
+
+
+

@@ -1,0 +1,74 @@
+2.컬렉션 프레임워크의 핵심 인터페이스
+
+Iterator - 반복자 : 반복
+
+3. List 인터페이스
+  ArrayList - 배열을 자료화한 구조
+
+  Object[] elementDate = new Object[10];
+
+  - 물리적 메모리에 순차적으로 등록
+  - 데이터의 조회 빠르다.
+  - 데이터 변경 X -> 새로운 배열 생성
+  - 데이터 추가, 삭제시 불리
+
+ -  ArrayList 기본 용량 10
+       배열의 크기를 넘어서게 되면 현재 용량 2배로 늘린다.
+
+
+
+  반복 작업의 표준화 : Iterator
+         - iterator()
+          
+         Iterator
+           - hasNext() : 다음 요소가 있는지?
+           - next() : 다음 요소를 조회
+
+        - 반복이 완료되면 끝(다시 반복 X)
+        - 다시 반복할려면 다시 Iterator 객체 생성
+
+
+        - Listlterator - List 인터페이스 구현 클래스
+               - hasNest();
+                - next() : 다음 요소를 조회
+
+                - hasPrevious() : 이전 요소가 있는지?
+                - previous() : 이전 요소 조회
+
+         - LinkedList
+            각 요소가 다음 연결 요소의 주소 가지고
+            
+            - 데이터 추가, 삭제(유리) -> 다음 요소의 주소만 변경
+            - ArrayList와 달리 새로운 배열 X -> 메모리 소비 적고
+
+            - 데이터 논리적으로 연결 -> 조회시 불리
+
+            - Queue
+               - offer() : 추가
+               - poll() : 앞에서 꺼내기
+
+
+
+            - Stack
+               - push() : 가장 위에 추가
+               - pop() : 가장 위에서 꺼내기
+
+
+3.Map 인터페이스
+   키, 값, 쌍
+
+    HashMap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
