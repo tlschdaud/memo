@@ -1,0 +1,43 @@
+Enum 클래스
+jdk 1.5
+- 상수만을 위해 나온 클래스
+- java.lang.Enum
+★ 각 상수 -> Enum의 정적 상수 객체
+- 추상클래스
+- 생성자 private
+---------------------------------------------------------------------------------------
+1. 애너테이션이란?
+주석, 주해 - 설명, 정보제공
+
+2. 표준 에너테이션
+@Override
+ - 현재 메서드가 재정의 된 메서드
+ - 컴파일러에게 정보 전달
+ - 컴파일러가 -> 상위 클래스에 동일 메서드가 있는 지 체크?
+@Deprecated
+@Funcrionallnterface
+
+3. 메타 애너테이션
+애너테이션을 만들어주는 애너테이션
+@Target
+  - 애너테이션이 적용될 범위
+  - 메서드, 필드, 매개변수, 클래스, 인터페이스
+  - METHOD, FIELD, TYPE_USE, TYPE ...
+@Retention
+  - 애너테이션의 유지 범위(실행시점)
+  - SOUCE - 소스상에서만 존재, 컴파일시에 제거
+              - 컴파일러에게 정보 전달
+  - CLASS - 소스와 클래스파일에서 존재, 실행시는 무시(기본값)
+  - RUNTIME - 실행중 유지되는 조건
+
+     Re
+java.lang.annotation
+    implements java.lang.annotation.Annotation
+
+- 타입 매개변수 X(지네릭)
+- 매개변수가 있는 추상메서드 정의 X
+
+Class 클래스 - 클래스의 정보
+1. 클래스명.class
+2. Object - getClass()
+3. Class.forName

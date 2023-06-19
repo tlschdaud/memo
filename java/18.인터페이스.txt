@@ -1,0 +1,93 @@
+2.Set 인터페이스
+ - 중복 X
+ - 순서 X
+ - HashSet
+ - TreeSet
+   - HashSet + 정렬(이진트리)
+   - 이진검색트리 -> 노드를 지날때마다 검색 범위가 1/2
+   - 검색시 빠른 이전
+   - 데이터 추가, 삭제, 수정 -> 이진 트리 생성(성능 저하)
+
+   - 정렬의 기준
+     java.lang.Comparable 인터페이스
+	public int compareTo
+	  정렬 - 오름차순, 내림차순
+     java.util.Comparator
+
+ 중복을 체크하는 기준
+ - equals()
+ - hashCoda()
+
+향상된 for문 배열, 컬렉션프레워크
+
+
+3.Map 인터페이스
+  키, 값 쌍
+
+  키 - 중복 X -  Set 자료형
+  값 - 중복 O
+
+  HashMap
+  TreeMap
+ 
+ - put("키", "값")
+
+  put으로 값을 추가, 수정
+  interface Map.Entry
+  -> 키, 값을 담은 객체
+
+  Map.Entry[] table
+
+
+
+4.Arrays
+  (java.util)
+  - 배열에 부가적인 유용한 기능
+
+5.Collections
+  (java.util)
+  - Collection에 부가적인 유용한 기능
+
+
+Queue(선입선출 - FIFO)
+front : 삭제
+rear : 삽입
+
+- add : rear 위치에 e 삽입
+- E element : front에 위치한 데이터 반환
+- remove : front에 위치한 데이터를 반환 후 삭제
+- offer(e) : rear위치에 데이터 삽입
+- peek() : front 위치에 있는 데이터의 값 반환
+- poll() : front 위치에 있는 데이터를 반환 후 삭제
+
+
+
+Stack(후입선출 - LIFO)
+push() - 데이터 삽입
+pop() - top 데이터 삭제
+peek() - top 데이터 보기
+search() - 위치 조회
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

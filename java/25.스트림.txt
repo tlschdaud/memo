@@ -1,0 +1,65 @@
+스트림(Stream)
+
+1. 스트림이란??
+컬렉션 프레임워크
+배열
+for (int i = 0; i < nums.length; i++) {
+     int num = nums[i];
+     test(num);
+}
+
+2. 스트림의 연산
+ 1) 중간 연산
+  - Stream 객체를 반환하는 메서드
+
+ 2) 최종 연산
+  - Stream 이외의 반환값이 있는 메서드
+  - 연산의 최종 결과를 도출 메서드
+
+ 3) 지연된 연산
+  - 중간 연산은 최종 연산이 호출 되기 전까지는 실행X
+
+ 4) 기본자료형을 다루는 스트림
+   IntStream, LongStream, DoubleStream ....
+3. 스트림 만들기
+java.util.stram 패키지
+ 1) 컬렉션
+   Collection
+      - Stream stream()
+
+
+ 2) 배열
+      - Stream Arrays.stream(T[] t)
+      - IntStream, LongStream ....
+
+      - Stream.of(...)
+
+
+4. 특정 범위의 정수
+
+5. 임의의 수
+java.util.Random
+
+6. 람다식 - iterate(), generate()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
