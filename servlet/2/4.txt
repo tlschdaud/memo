@@ -1,0 +1,23 @@
+커스텀 액션
+
+태그 클래스를 이용해서 커스텀 액션 만들기
+1. SimpleTag 인터페이스
+
+2. SimpleTagSupport 클래스를 이용해서 태그 클래스를 작성하는 방법
+    - doTag 메서드
+
+3. 애트리뷰트가 있는 커스텀 액션을 만드는 태그 클래스
+
+4. 동적 애트리뷰트 지원하는 태그 클래스
+    - setDynamicAttributes
+5. 본체가 있는 커스텀 액션을 만드는 태그 클래스
+      <jsp:doBody>
+       - JspFragment getJspBody
+             invoke(OutputStream out)
+                
+
+
+6. 변수를 지원하는 커스텀 액션을 만드는 태그 클래스
+    Jspcontext getJspcontext
+
+7. 			 

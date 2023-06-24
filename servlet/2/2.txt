@@ -1,0 +1,145 @@
+JSTL
+
+1. 코어(core) 라이브러리
+<c:set> EL식 변수
+           속성
+	속성을 관리하는 내장객체
+	pageConext
+	request
+	session
+	application
+	   .setAttribute
+	   getAttribute
+	   .removeAttribute
+         
+        scope="page|request|session|application
+
+<c:remove var="EL식 변수명"/>
+    scope="page|request|sesstion|application"
+
+<c:if test="${ .... }"
+
+</c:if>
+
+<c:choose>
+    <c:when test="${ ... }"></c:when>    
+</c:choose>
+
+<c:forEach>
+   배열
+   java.util.Collection - List, Set
+   java.util.Map
+   Iterator
+   Enumeration
+
+   begin - 시작 번호
+   end - 종료 번호
+   step - 수치만큼 번호 카운팅
+
+   varStatus
+        - index : 0부터 시작하는 순서 번호
+        - count : 1부터 시작하는 순서 번호
+        - first : 첫번째
+        - Last : 마지막
+
+<c:forTokens>
+    - java.util.StringTokenizer
+
+    - items : "문자열"
+    - delims : "구분문자"
+    - var
+
+<c:catch> : 예외처리
+   var
+
+   empty
+
+<c:redirect>
+   HttpServletResponse
+        sendRedirect
+
+   - url="이동할 URL"
+
+<c:import> : 현재 서버 + 외부 서버
+     <jsp:include>와 비슷 : 현재 서버 자원만 접근
+ 
+      url="추가할 URL"
+
+<c:url>
+     - value = "경로"
+     /컨택스트 경로/경로...
+
+<c:out> : 텍스트 출력
+      value
+
+2. 포매팅(fmf) 라이브러리
+uri="http://java.sun.com/jsp/jstl/fmt"
+prefix="fmt"
+날짜 -> Date
+숫자 -> 형식화
+
+지역화- 통화, 숫자 표기
+다국어 지원
+
+
+<fmt:formatDate />
+     type="date"
+	dateStyle="long|short|full"
+
+     type="time"
+	timeStyle="long|short|full"
+     type="both"
+
+     pattern="패턴"
+
+<fmt:formatNumber>
+    DecimalFormat
+       0,000
+       #,###
+
+      - groupingUsed - true
+      - pattern
+
+<fmt:setLocale value="" />
+java.util.Locale
+
+언어코드_국가코드
+ko_kr
+
+en_US
+
+ja_jp
+
+
+<fmt:timeZone>
+<fmt:setTimeZone>
+
+
+Asia/seoul
+Asia/Hong_Kong
+Ameria/New_York
+
+다국어
+- 메세지 자원들 로드
+<fmt:setBundle>
+<fmt:bundle>
+
+<fmt:message>
+   key="메세지 코드" />
+
+메세지 파일 properties
+
+message.properties
+message_en.properties
+message_ja.properties
+
+키=값
+
+# 주석
+
+java.time
+
+3. 함수(functions) 라이브러리
+
+
+

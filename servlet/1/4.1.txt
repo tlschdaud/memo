@@ -1,0 +1,82 @@
+JDBC로 데이터베이스와 JSP 연동
+JDBC API(Application Programming Interface)
+
+java.sql
+
+0. mysql driver 로딩
+   Class.forName("....")
+1. DriverManager
+   - 데이터베이스 연결
+
+2. Connection
+   createStatement();
+   
+3. Statement
+   int executeUpdate - 추가(INSERT), 수정(UPDATE), 삭제(DELETE)
+       (영향을 받은 레코드 갯수)
+
+   ResultSet executeQuery - 데이터 조회
+
+4. PreparedStatement
+   ?, ?, ?
+
+    set자료형(순서, 값)
+
+
+    int executeUpdate()
+    ResultSet executeQuery();
+5. ResultSet
+    boolean next() -> 다음 레코드 위치로 이동
+    getInt -> 정수형 필드 데이터 조회
+    getLong
+    getDouble
+    getFloat ...
+    getString ...
+    getDate -> 날짜
+    getTime -> 시간
+    getTinrstamp -> 날짜, 시간
+6. CallableStatement
+   -프로시져 : PreparedStatement와 동일
+
+
+MVC
+
+M(Model) - 비지니스 로직을 처리
+             - Service(- 회원가입, 로그인)
+                  - DAO(Data Access Object) - 직접 데이터 접근
+                  - DTO(Cata Transfer Object) - 데이터 전달 객체
+                  - VO(value Object) - 
+ 
+V(View) - 보이는 화면
+C(Controller) - 요청과 응답 사이에서 뷰네서 유입된 요청 -> 적절한 Model을 조회 -> 결과 -> 응답
+
+         요청  - 응답  C(Controller)   
+V(View)                                  M(Model)
+
+작업 상태(Enum)
+     준비중(READY)
+     진행중(PROGRESS)
+     완료(DONE)
+
+
+작업 등록
+   /register
+
+작업 수정
+   /update
+
+작업 삭제
+   /delete
+
+
+
+
+
+
+
+
+
+
+
+
+

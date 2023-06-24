@@ -1,0 +1,101 @@
+Servlet : 자바에서 제공하는 웹을 구현하는 확장 기술
+요청(HttpServletRequest)
+     - 웹브라우저
+     - 요청 전문
+         헤더(Header)
+             - 정보
+             - 요청에 대한 정보
+                (URL, 요청 방식 - GET, POST)
+             - 요청하는 환경에 대한 정보
+                - 언어, UserAgent(브라우저 정보)
+                - 아이피
+             - 요청 body 데이터의 형식
+               content-type : 
+                    - application/x-www-form-urlencoded;
+                       (바디 - 키=값&키=값...)
+                    - application/json;
+                       (바디 - {키 : 값, 키 : 값 ...})
+ 
+         바디(Body)
+              - 전송할 데이터
+              - POST 양식 데이터
+              - 전송 파일 데이터
+
+
+응답(HttpServletResponse)
+     - 서버
+     - 응답 전문
+        헤더(Header)
+             - 응답 정보
+	      응답 상태 코드
+                      2xx
+                      3xx
+                      4xx
+                      5xx
+             - 응답 body 종류에 대한 정보
+	     content-type : 
+		 text/html;
+		  -> 브라우저가 body의 데이터를 HTML 형식으로 인식
+		  -> DOM 객체 생성
+             - 브라우저 동작 통제
+	     Location : 주소 ; -> 브라우저에게 URL 이동
+                 Set-Cookid : 키 = 값 ...
+                 Refresh : 5
+                 Content-Type : Content-Disposition; a....
+		- 응답 데이터를 다운로드 동작
+        바디(Body)
+	응답 데이터
+
+요청 방식
+GET
+    - 서버 자원 조회
+    - 브라우저에 주소를 입력하는 행위 -> 서버의 자원 조회
+    - DELETE : 삭제
+
+https://search.naver.com/search.naver
+?where=nexearch&
+sm=top_hty&
+fbm=1&
+ie=utf8&query=%EB%B8%94%EB%A1%9C%EA%B7%B8
+
+
+
+POST
+    - 서버에 데이터 작성(전송)
+    - body에 요청 데이터
+    - PUT : 데이터의 치환
+    - PATCH : 일부 데이터의 수정
+
+OPTIONS
+     - 요청 전에 통신 옵션
+
+HTTP(Hyper Text Transfer Protocol)
+HTTPS
+FTP
+SFTP
+SSH
+
+javax.servlet.http
+
+
+사용자
+인스턴스
+
+HttpServlet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

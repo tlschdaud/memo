@@ -1,0 +1,67 @@
+JSP 내장객체
+_jspService
+
+
+1. 내장객체의 종류
+HttpSetvletRequest request
+HttpSetvletResponse response
+PageContext pageContext
+ServletConfig config
+ServletContext application
+HttpSession session
+
+
+2. 속성 처리 메서드의 종류
+pageContext
+request
+session
+application
+    - Object getAttribute(String name)
+    - void setAttribute(String name, Object value);
+
+EL식의 변수로 사용 가능...
+pageContext > request > session > application
+${name}
+pageScope
+requestScope
+sessionScope
+applicationScore
+
+3. request 내장 객체의 기능과 사용법
+    헤더값 조회
+    요청 데이터 조회
+    String getParameter(String name);
+    Map getParameterMap();
+    Enumeration getParameterValues
+
+
+4. response 내장 객체의 기능과 사용법
+     헤더값 조회
+     헤더값 추가
+
+     ServletOutputStream getOutputStream()
+     PrinterWriter getWriter()
+
+
+
+5. out 내장 객체의 기능과 사용법
+
+JspWriter out
+   -> 커스텀 태그
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

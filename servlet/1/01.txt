@@ -1,0 +1,127 @@
+Servlet & JSP1
+
+개발환경 구축
+
+1. 이클립스 설치
+2. tomcat9  설치 및 설정
+3. 프로젝트 생성
+4. JSP 프로젝트 폴더 구조
+
+웹기초
+1. 요청과 응답 이해하기
+Request(요청 - 웹브라우저) -----> Response(응답 - 서버)
+
+ 요청 전문
+     헤더(header)
+        요청에 대한 정보
+        요청에 대한 환경
+
+     바디(body)
+
+ 응답 전문
+      헤더(header)
+          응답(body)의 데이터 종류
+          응답 상태 ...
+              2xx
+                  200 - 정상 응답
+                  201 - 작성됨
+              3xx
+                  301 - 영구이동
+                  302 - 임시이동
+                  304 - 캐시됨(브라우저 있는 데이터를 사용)
+              4xx - Client(브라우저쪽)
+                  400 - 잘못된 요청
+                  401 - 권한 없음
+                  403 - 금지된(Forbidden)
+                  404 - 찾을 수 없음(Not Found)
+
+              5xx - Server(서버)
+	      500 - 내부 서버 오류
+                          (코드, 서버 자체 문제)
+	      501 - Bad Gateway
+                  503 - 서비스 사용할 수 없음
+
+         브라우저 명령..
+         content-type : application/json
+                         : text/html
+ 
+     바디(body)
+
+5. HTTP 요청 메서드
+
+1) GET
+2) POST
+3) PUT
+4) PATCH
+5) DELETE
+
+6) OPTIONS
+    - 요청시 통신 옵션을 설정하기 위한 용도
+
+
+GET
+   - 데이터 조회
+   - 브라우저에 조회 URL 데이터를 전송 함으로써 조회
+    https://newsstand.naver.com/
+    ?
+    list=&pcode=011
+  
+    query(질의)
+    querystring
+
+    조회용 데이터 -> URL ? 
+     요청 body는 비어있는 상태로 전송
+
+
+POST
+      : 작성하다
+
+     - PUT : 전체 변경(치환)
+     - PATCH : 부분 변경
+
+
+서블릿
+
+1. 서블릿(Servlet) 이란?
+HttpServlet
+
+2. 서블릿(Servlet) 클래스 작성하기
+
+3. web.xml 파일에 서블릿 등록하기
+<web-app>
+     <servlet>
+          <servlet-name></servlet-name>
+          <servlet-class></servlet>
+     <servlet>
+     <serclet-mapping>
+          <servlet-name></servlet-name>
+
+
+post
+     요청 헤더
+              content-type : application/x-www-form-urlencoded;
+
+      요청 바디
+              subject=글제목..&content=글내용...
+
+              한글 데이터 -> 16진수 변환 % ... urlencode
+
+     {
+	subject : "글제목"
+            content : "글내용",
+      }
+
+post 요청방식의 body에 데이터는 비교적 
+
+
+
+
+
+
+
+
+
+
+
+
+

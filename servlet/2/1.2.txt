@@ -1,0 +1,54 @@
+JSTL
+코어(core) 라이브러리
+"http://java.sun.com/jsp/jstl/core"
+1.<c:set> : EL 변수 지정
+	  기본적으로 pageContext의 속성으로 등록
+	  scope
+	    - page (pageContext)
+	    - request
+	    - session
+	    - application
+
+2. <c:remove> : EL식 변수 삭제 - 속성값 삭제(전 범위의 속성 삭제 - pageContext, request, session, application)
+ 	 scope
+	    - page (pageContext)
+	    - request
+	    - session
+	    - application
+
+3. <c:if> 
+       test="${ 조건식 }"
+
+4. <c:choose>
+     - 다중 조건문
+     - switch case
+       <c:wher test="${조건문}">
+       <c:otherwise>
+
+5. <c:forEach>
+     배열
+     java.util.Collection
+     java.util.Map
+     java.util.Iterator
+     java.util.Enumeration
+
+	var
+	begin
+	end - 
+	step - 1
+
+6. <c:forTokens>
+
+
+
+
+
+
+
+포매팅(fmf) 라이브러리
+http://java.sun.com/jsp/jstl/fmt
+
+
+
+함수(function) 라이브러리
+http://java.sun.com/jsp/jstl/function

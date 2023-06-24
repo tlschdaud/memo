@@ -1,0 +1,44 @@
+커스텀 액션
+1. 커스텀 액션을 만드는 방법
+tag / page
+
+
+클래스 SimpleTag
+
+내장객체
+HttpServletRequest request
+HttpServletResponse response
+HttpSession session
+ServletContext application
+ServletConfig config
+JspWriter out
+JspContext jspContext
+
+2. 태그파일을 이용해서 커스텀 액션 만들기
+attibute -> 속성 추가
+     name -> 속성 추가
+     type -> 자료형 / 없는 경우는 기본값이 문자형 자료
+     required : true : 필수 속성
+
+body-content
+	1) empty
+	   단일 태그 -> 태그 자체에서 출력
+
+	  열린태그 ~ 열린태그
+	2) sctiptless
+	   - 자바코드를 제외한, 텍스트, EL식 태그 안에 포한할 수 있는 형태
+
+	3) tagdependant
+	    텍스트만 태그 안에 사용 할 수 있다.
+
+	<jsp:doBody />
+	
+	LocalDate
+	LocalTime
+	LocalDateTime
+	ZonedDateTime
+	OffsetDateTime
+	Instant...
+
+3. 태그 클래스를 이용하여
+4. 커스텀 액션 태그를

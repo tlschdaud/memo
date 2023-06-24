@@ -1,0 +1,42 @@
+Servlet & JSP1
+
+JSP
+1. JSP의 특징
+2. JSP의 페이지 처리과정
+hello.jsp -> 번역 -> hello_jsp.java -> hello_jsp.class -> 실행
+						1) _jspInit()
+						2) _jspService(req, res)
+						  - 매 요청 마다 호출
+						3) _
+
+3. JSP 생명주기
+
+
+스크립트 태그
+      - 자바코드
+
+1. 선언문
+<%! 자바 코드 %>
+
+2. 스크립틀릿
+<% 자바 코드 %>
+
+- _jspService 메서드 안에 번역
+- 변수는 모두 지역변수 ...
+- 메서드 정의 X
+
+
+3. 표현문
+<%= 변수, 메서드 호출%>
+- _jspService 메서드 안에 번역
+- 출력 전용ㅇ 0 -> out.print(....);
+
+
+
+
+
+
+
+디렉티브 태그
+1. page
+2.
