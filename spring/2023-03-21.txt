@@ -1,0 +1,69 @@
+타임리프(Thymeleaf)
+1. 스프링 MVC와 타임리프 연동 설정
+thymeleaf-spring5
+thymeleaf-extra-java8time
+(#temporal) - java.time 패키지 대응 
+thymeleaf-layout-dialect
+	- 레이아웃 기능 확장
+
+
+타임리프 내장 객체 
+#객체명 
+#lists
+#ctx
+#fields
+#dates 
+#temporal 
+
+Natual Template 
+	
+
+2. 타임리프 기본문법
+1) 타임리프의 주요 식(expression)
+1) ${...} : 변수식  
+2) #{...} : 메세지 식
+3) @{...} : 링크식  - 컨택스트 경로 자동 추가
+
+	@{/user/login(title=${title},param=1,param=2)}
+	/day07/user/login?title=....&param=1&param=2
+
+4) *{...} : 선택 변수식 
+		(th:object="${...}")
+		
+		
+2) 타임리프 식 객체
+
+3 th:text - 텍스트만 인식, HTML -> 텍스트로 인식 
+  th:utext - 텍스트 + HTML 해석 
+  
+4) th:each : 반복문 
+5) th:if, th:unless : 조건문 
+6) th:href
+   th:src 
+   th:속성명="${...}" -> 속성명="값" 대체
+
+7) th:block 태그 -> 빈 태그
+
+
+내장객체
+#dates, #strings, #numbers ...
+
+스프링 관리 객체 -> 바로 접근(@객체명)
+${@빈이름.메서드명(변수)}
+
+
+3. 스프링 MVC 폼과 에러 메시지 연동
+
+4. 타임리프 페이지 레이아웃
+
+<c:forEach var="item" items="${....}" varStatus="status">
+
+</c:forEach>
+
+
+
+
+
+
+
+

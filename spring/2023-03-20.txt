@@ -1,0 +1,16 @@
+1. Jackson 의존 설정
+jackson-databind
+jackson-datatype-jsr310
+-> java.time 패키지
+
+2.@RestController
+JSON - 응답 heager - content-type: application/json
+HTML - content-type:text/html
+    - 컨트롤러에 객체 반환(get) -> 변환
+
+@PathVariable
+
+3. @ResponseBody
+-> @Controller 형태의 요청 메서드 위에 정의 -> 응답을 JSON
+
+3. @Jsonlgnore -> 

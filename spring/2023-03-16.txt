@@ -1,0 +1,24 @@
+스프링 MVC : 세션, 인터셉터, 쿠키
+1. 컨트롤러에서 HttpSession 사용하기
+
+
+2. 인터셉터 사용하기
+HandlerInterceptor 인터페이스
+- boolean preHandle()
+   - 컨트롤러 빈 실행전 공통 부분
+   - true -> 컨트롤러 빈 실행
+   - false - 실행 X
+
+- void postHandle()
+   - 컨트롤러 빈 실행 이후, 출력 전 공통 부분 정의
+
+- void afterCompletion()
+   - 출력 완료 후에 공통 부분 정의
+
+- HandlerInterceptor 설정하기
+- Ant 경로 패턴
+* : /mypage -> mypage페이지 경로 하위 파일
+? : /my00? -> /my001 /my002 한자리
+** : 모든경로
+
+3. 컨트롤러

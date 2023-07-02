@@ -1,0 +1,15 @@
+커맨드 객체의 값 검증과 에러 메시지 처리
+1. 커맨드 객체 검증과 에러 코드 지정하기
+   Validator 인터페이스
+
+2. Errors와 ValidationUtils  클래스의 주요 메서드
+
+   Errors
+      - rejectValue("필드명", "메시지 코드");
+      - rejectValue("필드명", "메세지 코드", "기본메세지");
+      - rejectValue("메세지 코드");
+      - rejectValue("메세지 코드", "기본메세지");
+
+      - hasErrors() -> reject가 한번이라도 되면 true
+
+3. <form:errors

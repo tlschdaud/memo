@@ -1,0 +1,65 @@
+스프링 프레임워크란?
+Spring Framework
+
+1. 의존 주입(Dependency Inject : DI) 지원
+2. AOP(Aspect-Oriented Programming) 지원
+3. MVC 웹 프레임워크 제공
+4. JDBC, JPA 연동, 선언적 트랜잭션 처리 등
+DB 연동 지원
+
+C:\Users\tlsch\OneDrive\바탕 화면\신총명\apache-maven-3.9.0\bin
+
+개발환경 구축하기
+
+1. 메이븐 설치
+2. 메이븐 아키타입을 이용한 프로젝트 생성하기
+mvn archetype:generate
+
+groupId : 소속된 그룹
+artifactId : 프로젝트명칭
+
+기본 페키지
+
+3. 메이븐 프로젝트의 기본 디렉토리 구조
+4. 컴파일 하기
+mvn compile
+       -> target
+mvn clean -> 컴파일된 클래스 파일 삭제
+
+mvn[clean] package -> 배포 파일 만들기
+                   -> jar, war
+
+mvn test -> 테스트 실행 src/test/java -> 테스트 케이스를 테스트 -> 결과
+5. 테스트 실행
+6. 배포가능한 파일 만들기
+7. POM 파일 기본
+<dependency>
+
+1. compile
+
+2. rentime
+
+
+
+
+
+
+
+
+
+스프링은 객체 컨테이너
+객체를 담고있는 컨테이너
+-> 객체를 관리하기 위해서
+
+AppCtx -> 설정클래스
+@Configuration
+
+
+
+IOC(Inversion Of Control) : 제어의 역전
+
+1. BeanFactory
+2. ApplicationContext
+3. 싱글톤(SingleTon)  객체
+
+스프링 컨테이너

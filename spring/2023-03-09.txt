@@ -1,0 +1,33 @@
+스프링 MVC 시작하기
+1. 스프링 MVC
+
+스프링 MVC 프레임워크 동작 방식
+
+1. WebMvcConfigurer 인터페이스와 설정
+
+
+요청 -> DispatcherServlet -> HandlerMapper
+
+HandlerAdapter
+
+요청 처리 Bean
+@Controller
+Controller 인터페이스 구현체
+HttpRequestHanddler 인터페이스 구현체
+
+DispatcherServlet
+HanflerMapping
+HandlerAdapter
+View
+
+요청(/hello) -> DispatcherServlet - 컨트롤러 빈 검색 요청 -> HandlerMapping
+-> DispatcherServlet -> HandlerAdapter -> 컨트롤러 빈 해당 메서드 실행
+-> ModelAndView -> DispatcherServlet -> ViewResolver -> View -> 출력
+    1) 뷰에서 처리할 데이터
+    2) 출력할 뷰에대한 정보
+
+    model
+       .addAtrribute
+
+     - 요청 URL의 key 값과 변수명이 동일하면 자동 매핑
+     - 다를 경우는
