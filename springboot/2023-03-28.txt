@@ -1,0 +1,79 @@
+Spring Data Jpa
+2. Entity 설계하기
+@Entity - 영속성 관리 객체
+           - 테이블 생성
+
+@Table
+   - 엔티티 선언된 클래스명 -> 테이블명
+   - 테이블 명을 달리하는 경우
+   - 제약조건(컬럼을 조합해서 인덱스, 유니크 ...)
+
+@Id
+   - PK (기본키)
+   - 엔티티는 반드시 기본키 O
+
+@ GeneratedValue
+   - 증감번호
+   - strategy
+        GenerationType : AUTO(기본)
+                                - 하이버네이트 알아서 결정
+                              IDENTITY
+                                : DB의 자동 증감 로직
+                                    - MySQL : AUTO_INCREMENT
+
+                               SEQUENCE
+                                : 시퀀스 객체  - ORACLE
+
+                               TABLE
+                                : 하이버네티 별도 테이블 증감번호 설정
+
+
+@Lob - Large OBject
+   오라클 : CLOB - Character, BLOB
+   MySQL : LongText
+
+@CreationTimestamp
+   - 자동으로 생성일시를 입력
+   - 쿼리가 DB에서 실행될때
+
+@UpdateTimestamp
+   - 자동으로 수정일자를 입력
+   - 쿼리가 DB에서 실행될때
+
+@Enumerated : 열거형 타입
+   - VARCHAR2, VARCHAR
+   ordinal : ENUM상수의 순서번호(X)
+   String : ENUM 상수의 문자열(O)
+
+@Transient : DB
+
+@CreatedDate : 생성된 일시(엔티티에 추가)
+@LastModifiedDate : 수정된 일시(엔티에서 수정)
+
+
+EntityManagerFactory
+
+EntityManager
+   -> Entity 관리
+   -> 
+   -> 
+   ->
+   -> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Spring Security

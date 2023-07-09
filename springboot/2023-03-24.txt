@@ -1,0 +1,29 @@
+인텔리제이 스프링 셋팅
+auto import
+
+스프링 부트 설정
+1. spring initializer
+
+2. lombok 설치
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+@RequiredArgsContructor
+  -> 초기 값이 없는 final 붙어 있는 멤버 변수(상수)
+  -> @NonNull 멤버 변수
+  -> 의존성 자동 주입
+@EqualsAndHashCode
+@Data -> Getter, @ Setter, @ToString,
+@EqualsAndHashCode, @RequiredArgsContructor
+
+@Log -> System.out.pringln
+@Log4j
+@Log4j2
+
+@Builder
+
+3. 기본 셋팅
+jarkata.validation api
+hibernate-validator

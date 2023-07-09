@@ -1,0 +1,37 @@
+Spring Data JPA
+1. 쿼리 메서드
+2. @Query 애노테이션
+3. Querydsl
+Predicate
+
+WHERE 조건식(비교, 논리)
+
+4. 연관관계 매핑
+1) 일대일
+@OneToOne
+2) 일대다
+@OneToMany
+3) 다대일
+@ManyToOne
+
+
+@OneToMany + @ManyToOne + Lombok : 
+ToString() : -> getter
+
+getMember() ->
+
+5. 영속성 전이
+6. 지연로딩
+
+fetch=FetchType.EAGER : 즉시로딩
+                             - 쿼리부터 데이터가 추출
+                                (join을 통해서 데이터가 추출)
+                     .LAZY : 지연로딩
+                           - 처음에는 데이터 엔티티만 조회
+                           - getter로 관계 매핑 되어 있ㄴ,ㄴ 컬럼을 조회하면 그때 쿼리가 실행
+7. Auditing을 이용한 공통 속성화
+
+Criteria
+
+
+Spring security
